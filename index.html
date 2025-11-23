@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习助手 - 计量经济学</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 主页面 -->
+    <div id="home-page">
+        <div class="home-header">
+            <h1>📚 计量经济学学习助手</h1>
+            <p>自动扫描学习资料文件夹</p>
+            <button class="select-folder-btn" id="select-folder-btn">
+                📁 选择/刷新学习文件夹
+            </button>
+            <div id="current-folder" class="current-folder"></div>
+        </div>
+        <div class="course-container" id="course-container">
+            <div class="empty-state">
+                <h2>👆 点击上方按钮选择学习资料文件夹</h2>
+                <p>程序将自动扫描文件夹中的所有课程</p>
+                <p style="margin-top: 10px; color: #999;">
+                    默认路径: C:\Users\15510\Desktop\计量经济学补课
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 学习页面 -->
+    <div id="study-page">
+        <div class="study-header">
+            <button class="back-btn" id="back-btn">← 返回</button>
+            <h2 id="current-course-title">课程标题</h2>
+            <div class="zoom-controls">
+                <span>左侧缩放:</span>
+                <button class="zoom-btn" id="zoom-out">−</button>
+                <span class="zoom-display" id="zoom-display">100%</span>
+                <button class="zoom-btn" id="zoom-in">+</button>
+                <button class="zoom-btn" id="zoom-reset">重置</button>
+            </div>
+        </div>
+        
+        <div class="resource-selector" id="resource-selector"></div>
+
+        <div class="split-container">
+            <div class="left-pane" id="left-pane">
+                <div class="webview-container" id="webview-container">
+                    <div class="placeholder">
+                        <h2>👈 请从上方选择一个视频资源</h2>
+                        <p>点击资源标签开始学习</p>
+                    </div>
+                </div>
+            </div>
+            <div class="resizer" id="resizer"></div>
+            <div class="right-pane" id="right-pane">
+                <div class="placeholder">
+                    <h2>👈 请从上方选择一个PDF文件</h2>
+                    <p>点击资源标签查看学习资料</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

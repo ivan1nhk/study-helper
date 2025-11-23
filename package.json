@@ -1,0 +1,28 @@
+{
+  "name": "study-helper",
+  "version": "1.0.0",
+  "description": "计量经济学学习助手 - 分屏学习工具",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": ["学习", "分屏", "electron"],
+  "author": "ivan1nhk",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.study.helper",
+    "productName": "学习助手",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": ["nsis"],
+      "icon": "icon.ico"
+    }
+  }
+}

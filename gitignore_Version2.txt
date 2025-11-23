@@ -1,0 +1,25 @@
+# 依赖文件夹（太大，不需要上传）
+node_modules/
+
+# 打包输出文件夹
+dist/
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# IDE 配置文件
+.vscode/
+.idea/
+
+# 临时文件
+*.tmp
+*.log
+
+# 用户配置（包含个人路径）
+config.json
